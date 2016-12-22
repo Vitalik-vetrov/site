@@ -1,0 +1,202 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #7e7f84;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family: 'Roboto', sans-serif; /*font-family: 'Roboto Condensed', sans-serif;*/
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	color: #58c93a;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #58c93a;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after { 
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+
+
+
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+
+.center-main-block{
+    max-width:980px;
+	margin:0 auto;
+}
+
+.header{
+    background: #292929;
+    
+}
+
+.header-logo{
+    color: #fff;
+    letter-spacing:px;
+    float: left;
+    
+}
+
+.header-logo a{
+    width: 117px;
+    height: 117px;
+    display: inline-block;
+    float: left;
+    margin: 12px 20px 10px 0;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.header-logo h1{
+    font-style: italic;
+    font-size: 24px;
+    display: inline-block;
+    padding: 35px 0
+}
+
+
+
+.header-logo span{
+    color: #58c93a;
+}
+
+.header-menu{
+     float: right;
+    width: 65%;
+    
+}
+
+.header-menu ul{
+    display: table;
+    width: 100%;
+}
+
+.header-menu li{
+    display: table-cell;
+    border-left: 1px solid #1d1d1d;
+    padding: 0 25px;
+}
+.header-menu li:first-child{
+    border-left: none;
+}
+.header-menu li:last-child{
+    padding-right: 0;
+}
+
+.header-menu a{
+    display:block;
+    padding: 60px 0px;
+    border-bottom: 5px solid #292929;
+    font-size: 18px;
+    transition: background 0.9s, color ease-out 0.3s;
+    
+}
+.header-menu a:hover{
+     border-bottom: 2px solid #58c93a;
+}
+
+
+
+.main{
+   background: #fff;
+    padding: 80px 0;
+    height: 500px;
+}
+
+.block-about{
+    width: 60%;
+    border: 1px solid #e1e0e0;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: justify;
+   box-shadow: 0px 0px 20px 3px #abafb8, -0px -0px 20px -3px #abafb8;
+        
+}
+
+.footer{
+    
+}
+
